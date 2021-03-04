@@ -14,6 +14,8 @@ class pendudukController extends Controller
     public function create(Request $request)
     {
         \App\Models\penduduk::create($request->all());
+        return redirect('/penduduk')->with('sukses', 'Data Berhasil diinput');
+
     }
 
 }
