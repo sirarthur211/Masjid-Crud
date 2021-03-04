@@ -85,6 +85,8 @@ Composer akan menginstall dependency paket dari source code tersebut hingga sele
 
 Jalankan perintah php artisan, untuk menguji apakah perintah artisan Laravel bekerja.
 
+env.example pada folder masjid-crud hapus bagian examplenya menjadi env.
+
 Buat database baru (kosong) pada mysql (via phpmyadmin) dengan nama masjid-crud.
 
 Kembali ke terminal, php artisan key:generate.
