@@ -17,5 +17,10 @@ class pendudukController extends Controller
         return redirect('/penduduk')->with('sukses', 'Data Berhasil diinput');
 
     }
+    public function edit($id)
+    {
+        $penduduk = \App\Models\penduduk::find($id);
+        return view('penduduk/edit');
+    }
 
 }

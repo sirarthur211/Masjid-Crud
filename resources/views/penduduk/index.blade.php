@@ -30,6 +30,7 @@
                         <th>AGAMA</th>
                         <th>STATUS PERKAWINAN</th>
                         <th>PEKERJAAN</th>
+                        <th></th>
                     </tr>
                     @foreach($data_penduduk as $penduduk)
                     <tr>
@@ -41,6 +42,7 @@
                         <td>{{$penduduk->Agama}}</td>
                         <td>{{$penduduk->StatusPerkawinan}}</td>
                         <td>{{$penduduk->Pekerjaan}}</td>
+                        <td><a href="/penduduk.{{$penduduk->id}}/edit" class="btn btn-warning btn-sm">Edit</a></td>
                     </tr>
                     @endforeach
                 </table>

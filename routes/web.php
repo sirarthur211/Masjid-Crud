@@ -19,3 +19,4 @@ Route::get('/', function () {
 
 Route::get('/penduduk', 'App\Http\Controllers\pendudukController@index');
 Route::post('/penduduk/create', 'App\Http\Controllers\pendudukController@create');
+Route::get('/penduduk.{id}/edit', 'App\Http\Controllers\pendudukController@edit');
