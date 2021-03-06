@@ -20,7 +20,7 @@ class pendudukController extends Controller
     public function edit($id)
     {
         $penduduk = \App\Models\penduduk::find($id);
-        return view('penduduk/edit');
+        return view('penduduk/edit',['penduduk' => $penduduk]);
     }
 
 }

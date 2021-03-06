@@ -138,7 +138,7 @@
                             </div>
                             <div class="mb-3">
                                 <label for="InputBerlakuHingga" class="form-label">Berlaku Hingga</label>
-                                <input name="Berlaku Hingga" type="text" class="form-control" id="InputBerlakuHingga" aria-label="BerlakuHingga" placeholder="">
+                                <input name="BerlakuHingga" type="text" class="form-control" id="InputBerlakuHingga" aria-label="BerlakuHingga" placeholder="">
                             </div>
                         </div>
                     <div class="modal-footer">

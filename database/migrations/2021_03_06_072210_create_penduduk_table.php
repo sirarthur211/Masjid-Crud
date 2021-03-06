@@ -28,7 +28,7 @@ class CreatePendudukTable extends Migration
             $table->string('StatusPerkawinan');
             $table->string('Pekerjaan');
             $table->string('Kewarganegaraan');
-            $table->string('Berlaku Hingga')->nullable();
+            $table->string('BerlakuHingga')->nullable();
             $table->timestamps();
         });
     }
