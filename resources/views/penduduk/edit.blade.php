@@ -17,7 +17,7 @@
         @endif
         <div class="row">
             <div class="col=-lg-12">
-                <form action="/penduduk/create" method="POST">
+                <form action="/penduduk/{{$penduduk->id}}/update" method="POST">
                     {{csrf_field()}}
                     <div class="mb-3">
                         <label for="InputNIK" class="form-label">NIK</label>
@@ -29,7 +29,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="InputTempatTanggalLahir" class="form-label">Tempat,Tanggal Lahir</label>
-                        <input name="TempatTanggal_Lahir" class="form-control" id="InputTempatTanggalLahir" value="{{$penduduk->TempatTanggal_Lahir}}">
+                        <input name="Tempat_TanggalLahir" class="form-control" id="InputTempatTanggalLahir" value="{{$penduduk->Tempat_TanggalLahir}}">
                     </div>
                     <div class="mb-3">
                         <label for="InputJenisKelamin" class="form-label">Jenis Kelamin
@@ -101,7 +101,7 @@
                         <label for="InputBerlakuHingga" class="form-label">Berlaku Hingga</label>
                         <input name="BerlakuHingga" class="form-control" id="InputBerlakuHingga" value="{{$penduduk->BerlakuHingga}}">
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-warning">Update</button>
                 </form>
             </div>
         </div>

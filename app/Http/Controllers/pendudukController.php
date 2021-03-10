@@ -22,5 +22,12 @@ class pendudukController extends Controller
         $penduduk = \App\Models\penduduk::find($id);
         return view('penduduk/edit',['penduduk' => $penduduk]);
     }
+    public function update(Request $request, $id)
+    {
+        $penduduk = \App\Models\penduduk::find($id);
+        $penduduk->update($request->all());
+        return redirect('/penduduk')->with('sukses', 'Data berhasil diupdate');
+    }
+
 
 }
