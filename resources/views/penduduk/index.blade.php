@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Masjid CRUD</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    </head>
-    <body>
-        <div class="container">
+@extends('layouts.master')
+
+@section('content')
             @if(session('sukses'))
             <div class="alert alert-success" role="alert">
                 {{session('sukses') }}
@@ -26,9 +21,7 @@
                         <th>NAMA</th>
                         <th>TEMPAT,TANGGAL LAHIR</th>
                         <th>JENIS KELAMIN</th>
-                        <th>ALAMAT</th>
                         <th>AGAMA</th>
-                        <th>STATUS PERKAWINAN</th>
                         <th>PEKERJAAN</th>
                         <th></th>
                     </tr>
@@ -38,11 +31,12 @@
                         <td>{{$penduduk->Nama}}</td>
                         <td>{{$penduduk->Tempat_TanggalLahir}}</td>
                         <td>{{$penduduk->JenisKelamin}}</td>
-                        <td>{{$penduduk->Alamat}}</td>
                         <td>{{$penduduk->Agama}}</td>
-                        <td>{{$penduduk->StatusPerkawinan}}</td>
                         <td>{{$penduduk->Pekerjaan}}</td>
-                        <td><a href="/penduduk.{{$penduduk->id}}/edit" class="btn btn-warning btn-sm">Edit</a></td>
+                        <td>
+                            <a href="/penduduk.{{$penduduk->id}}/edit" class="btn btn-warning btn-sm">Edit</a>
+                            <a href="/penduduk.{{$penduduk->id}}/delete" class="btn btn-danger btn-sm">Delete</a>
+                        </td>
                     </tr>
                     @endforeach
                 </table>
@@ -149,7 +143,4 @@
                 </div>
             </div>
         </div>
-    </div>       
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-    </body>
-</html>
+@endsection       

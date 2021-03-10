@@ -28,6 +28,12 @@ class pendudukController extends Controller
         $penduduk->update($request->all());
         return redirect('/penduduk')->with('sukses', 'Data berhasil diupdate');
     }
+    public function delete($id)
+    {
+        $penduduk = \App\Models\penduduk::find($id);
+        $penduduk->delete($penduduk);
+        return redirect('/penduduk')->with('sukses', 'Data berhasil dihapus');
+    }
 
 
 }
