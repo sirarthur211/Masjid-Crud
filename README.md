@@ -105,7 +105,4 @@ DB_PASSWORD=
 
 Jika hanya ingin membuat tabel, jalankan perintah php artisan migrate. Cek di phpmyadmin, seharusnya tabel sudah muncul.
 
-Setelah selesai, Jalankan perintah php artisan serve maka dapat diakses dengan http://localhost:8000/
->>>>>>> ee6a88cbdb567768257dbea4e0b1c1ba215eb2b0
-# MasjidCrud
-# Masjid-Crud
+Setelah selesai, Jalankan perintah php artisan serve maka dapat diakses dengan http://localhost:8000/penduduk
