@@ -60,4 +60,51 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<<<<<<< HEAD
 # DataPendudukMasjid
+=======
+
+## Tutorial Install
+
+Persiapan
+Memiliki CLI/Command Line Interface berupa Command Prompt (CMD) atau Power Shell atau Git Bash (selanjutnya kita sebut terminal).
+
+Memiliki Web Server (misal XAMPP) dengan PHP minimal versi 7.1.3.
+
+Composer telah ter-install, cek dengan perintah composer -V melalui terminal.
+
+Memiliki koneksi internet (untuk proses installasi).
+Langkah-Langkah
+
+Download Source Code dari repo Github laravel-crud dalam bentuk Zip.
+
+Extract file zip (source code) ke dalam direktori htdocs pada XAMPP, misal htdocs/laravel-crud.
+
+Melalui terminal, cd ke direktori masjid-crud.
+
+(Sesuai petunjuk installasi) Pada terminal, berikan perintah composer install. Ini yang perlu koneksi internet.
+
+Composer akan menginstall dependency paket dari source code tersebut hingga selesai.
+
+Jalankan perintah php artisan, untuk menguji apakah perintah artisan Laravel bekerja.
+
+env.example pada folder masjid-crud hapus bagian examplenya menjadi env.
+
+Buat database baru (kosong) pada mysql (via phpmyadmin) dengan nama masjid-crud.
+
+Kembali ke terminal, php artisan key:generate.
+
+Setting koneksi database di file .env (DB_DATABASE, DB_USERNAME, DB_PASSWORD).
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=masjid-crud
+DB_USERNAME=root
+DB_PASSWORD=
+
+Jika hanya ingin membuat tabel, jalankan perintah php artisan migrate. Cek di phpmyadmin, seharusnya tabel sudah muncul.
+
+Setelah selesai, Jalankan perintah php artisan serve maka dapat diakses dengan http://localhost:8000/
+>>>>>>> ee6a88cbdb567768257dbea4e0b1c1ba215eb2b0
+# MasjidCrud
