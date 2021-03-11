@@ -3,6 +3,7 @@
 @section('content')
             @if(session('sukses'))
             <div class="alert alert-success" role="alert">
+                <h4 class="alert-heading">Selamat</h4>
                 {{session('sukses') }}
             </div>
             @endif
