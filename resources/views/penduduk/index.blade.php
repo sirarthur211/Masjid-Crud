@@ -1,9 +1,9 @@
 @extends('layouts.master')
 
 @section('content')
+            <br>
             @if(session('sukses'))
             <div class="alert alert-success" role="alert">
-                <h4 class="alert-heading">Selamat</h4>
                 {{session('sukses') }}
             </div>
             @endif
@@ -16,7 +16,7 @@
                         Tambah Data Penduduk
                     </button>
                 </div>        
-                <table class="table cover">
+                <table class="table table-success table-hover">
                     <tr>
                         <th>NIK</th> 
                         <th>NAMA</th>
@@ -41,6 +41,19 @@
                     </tr>
                     @endforeach
                 </table>
+                <nav aria-label="Page navigation example ">
+                    <ul class="pagination justify-content-center ">
+                        <li class="page-item disabled">
+                            <strong><a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a></strong>
+                        </li>
+                        <li class="page-item"><strong><a class="page-link" href="#">1</a></strong></li>
+                        <li class="page-item"><strong><a class="page-link" href="#">2</a></strong></li>
+                        <li class="page-item"><strong><a class="page-link" href="#">3</a></strong></li>
+                        <li class="page-item">
+                            <strong><a class="page-link" href="#">Next</a></strong>
+                        </li>
+                    </ul>
+                </nav>
             </div> 
         </div>
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -139,6 +152,7 @@
                     <div class="modal-footer">
                         <button type="submit" class="btn btn-primary">Submit</button>
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
                         </form>
                     </div>
                 </div>
