@@ -1,6 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
+<br>
     <div class="container">
         <h4>Edit Data Penduduk</h4>
         @if(session('sukses'))
