@@ -5,7 +5,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #228B22;">
             <div class="container-fluid">
                 <a class="navbar-brand text-white" href="/penduduk">Masjid Al Iman</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,10 +20,9 @@
                             <a class="nav-link active text-white" aria-current="page" href="/penduduk">Penduduk</a>
                         </li>
                     </ul>
-                        <form class="d-flex">
-                            <input class="form-control me-2 float-end" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-success float-end" type="submit">Search</button>
-                        </form>
+                    <form class="d-flex">
+                        <button class="btn btn-primary" type="submit">Logout</button>
+                    </form>
                 </div>
             </div>
         </nav>

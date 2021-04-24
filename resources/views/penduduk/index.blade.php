@@ -12,7 +12,7 @@
                     <h2>Data Penduduk</h2>
                 </div>
                 <div class="col-6">
-                    <button type="button" class="btn btn-primary btn-sm float-end" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button type="button" class="btn btn-sm float-end text-white" style="background-color:#228B22;" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         Tambah Data Penduduk
                     </button>
                 </div>        
@@ -35,8 +35,8 @@
                         <td>{{$penduduk->Agama}}</td>
                         <td>{{$penduduk->Pekerjaan}}</td>
                         <td>
-                            <a href="/penduduk.{{$penduduk->id}}/edit" class="btn btn-warning btn-sm">Edit</a>
-                            <a href="/penduduk.{{$penduduk->id}}/delete" class="btn btn-danger btn-sm">Delete</a>
+                            <a href="/penduduk.{{$penduduk->id}}/edit" class="btn btn-info btn-sm">Edit</a>
+                            <a href="/penduduk.{{$penduduk->id}}/delete" class="btn btn-warning btn-sm">Delete</a>
                         </td>
                     </tr>
                     @endforeach
